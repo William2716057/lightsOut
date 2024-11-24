@@ -1,0 +1,3 @@
+C:\Users\wills\Desktop\Shortcuts\Files\Github\lightsOut\lightsOut\obj\Debug\lightsOut.njsproj.AssemblyReference.cache
+C:\Users\wills\Desktop\Shortcuts\Files\Github\lightsOut\lightsOut\obj\Debug\lightsOut.njsproj.CoreCompileInputs.cache
+C:\Users\wills\Desktop\Shortcuts\Files\Github\lightsOut\lightsOut\bin\Microsoft.NodejsTools.WebRole.dll
