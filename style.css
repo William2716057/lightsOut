@@ -1,6 +1,8 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    /**background-color: #2196F3;**/
+    /**background-image: linear-gradient(red, yellow, green);**/
 }
 
 .grid-item {
@@ -8,3 +10,103 @@
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 100px;
 }
+
+    .grid-item:nth-child(1) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(2) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(3) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(4) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(5) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(6) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(7) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(8) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(9) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(10) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(11) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(12) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(13) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(14) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(15) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(16) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(17) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(18) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(19) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(20) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(21) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(22) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(23) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(24) {
+        background: linear-gradient(purple, white, purple);
+    }
+
+    .grid-item:nth-child(25) {
+        background: linear-gradient(purple, white, purple);
+    }
