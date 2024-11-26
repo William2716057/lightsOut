@@ -13,7 +13,9 @@ gridItems.forEach((gridItem, index) => {
 
         if (index >= 5) {  
             const aboveItem = gridItems[index - 5];
-           
+            //const belowItem
+            //const leftItem
+            //const rightItem
             if (aboveItem.style.backgroundImage === 'linear-gradient(purple, white, purple)') {
                 aboveItem.style.backgroundImage = 'linear-gradient(purple, yellow, purple)';
             } else {
