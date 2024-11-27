@@ -35,10 +35,11 @@ gridItems.forEach((gridItem, index) => {
 });
 
 // Function to toggle background image
+// Will function currectly without fading 
 function toggleGridItem(gridItem) {
-    if (gridItem.style.backgroundImage === 'linear-gradient(purple, white, purple)') {
+    if (gridItem.style.backgroundImage === 'linear-gradient(purple, purple, purple)') {
         gridItem.style.backgroundImage = 'linear-gradient(purple, yellow, purple)';
     } else {
-        gridItem.style.backgroundImage = 'linear-gradient(purple, white, purple)';
+        gridItem.style.backgroundImage = 'linear-gradient(purple, purple, purple)';
     }
 }
