@@ -1,26 +1,44 @@
 let gridItems = document.querySelectorAll('.grid-item');
 
-
 gridItems.forEach((gridItem, index) => {
     gridItem.addEventListener('click', () => {
-   
-        if (gridItem.style.backgroundImage === 'linear-gradient(purple, white, purple)') {
-            gridItem.style.backgroundImage = 'linear-gradient(purple, yellow, purple)';
-        } else {
-            gridItem.style.backgroundImage = 'linear-gradient(purple, white, purple)';
+
+        toggleGridItem(gridItem);
+
+        // Get indices for neighbors (above, below, left, right)
+        const rowLength = 5; // 5 items per row
+
+        // Check for item above (index - rowLength)
+        if (index - rowLength >= 0) {
+            const aboveItem = gridItems[index - rowLength];
+            toggleGridItem(aboveItem);
         }
 
+        // Check for item below (index + rowLength)
+        if (index + rowLength < gridItems.length) {
+            const belowItem = gridItems[index + rowLength];
+            toggleGridItem(belowItem);
+        }
 
-        if (index >= 5) {  
-            const aboveItem = gridItems[index - 5];
-            //const belowItem
-            //const leftItem
-            //const rightItem
-            if (aboveItem.style.backgroundImage === 'linear-gradient(purple, white, purple)') {
-                aboveItem.style.backgroundImage = 'linear-gradient(purple, yellow, purple)';
-            } else {
-                aboveItem.style.backgroundImage = 'linear-gradient(purple, white, purple)';
-            }
+        // Check the item to  left (index - 1), ensuring not the first column
+        if (index % rowLength !== 0) {
+            const leftItem = gridItems[index - 1];
+            toggleGridItem(leftItem);
+        }
+
+        // Check for item to  right (index + 1), ensuring not the last column
+        if ((index + 1) % rowLength !== 0) {
+            const rightItem = gridItems[index + 1];
+            toggleGridItem(rightItem);
         }
     });
 });
+
+// Function to toggle background image
+function toggleGridItem(gridItem) {
+    if (gridItem.style.backgroundImage === 'linear-gradient(purple, white, purple)') {
+        gridItem.style.backgroundImage = 'linear-gradient(purple, yellow, purple)';
+    } else {
+        gridItem.style.backgroundImage = 'linear-gradient(purple, white, purple)';
+    }
+}
