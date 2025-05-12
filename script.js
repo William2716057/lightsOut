@@ -47,12 +47,11 @@ gridItems.forEach((gridItem, index) => {
 function toggleGridItem(gridItem) {
     const currentBg = getComputedStyle(gridItem).backgroundImage;
 
-    const white = 'linear-gradient(purple, white, purple)';
-    const yellow = 'linear-gradient(purple, yellow, purple)';
-
-    if (currentBg.includes('white')) {
-        gridItem.style.backgroundImage = yellow;
+    if (currentBg.includes('rgb(255, 255, 255)')) {
+        // if square is yellow (on)
+        gridItem.style.backgroundImage = 'linear-gradient(purple, yellow, purple)';
     } else {
-        gridItem.style.backgroundImage = white;
+        // if square is white (off)
+        gridItem.style.backgroundImage = 'linear-gradient(purple, white, purple)';
     }
 }
