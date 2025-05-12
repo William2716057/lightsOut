@@ -36,10 +36,23 @@ gridItems.forEach((gridItem, index) => {
 
 // Function to toggle background image
 // Will function currectly without fading 
+//function toggleGridItem(gridItem) {
+ //   if (gridItem.style.backgroundImage === 'linear-gradient(purple, white, purple)') {
+ //       gridItem.style.backgroundImage = 'linear-gradient(purple, yellow, purple)';
+//    } else {
+//gridItem.style.backgroundImage = 'linear-gradient(purple, purple, purple)';
+ //   }
+//}
+
 function toggleGridItem(gridItem) {
-    if (gridItem.style.backgroundImage === 'linear-gradient(purple, purple, purple)') {
-        gridItem.style.backgroundImage = 'linear-gradient(purple, yellow, purple)';
+    const currentBg = getComputedStyle(gridItem).backgroundImage;
+
+    const white = 'linear-gradient(purple, white, purple)';
+    const yellow = 'linear-gradient(purple, yellow, purple)';
+
+    if (currentBg.includes('white')) {
+        gridItem.style.backgroundImage = yellow;
     } else {
-        gridItem.style.backgroundImage = 'linear-gradient(purple, purple, purple)';
+        gridItem.style.backgroundImage = white;
     }
 }
