@@ -52,3 +52,13 @@ function toggleGridItem(gridItem) {
 //    alert("You win!!!");
 
 //}
+
+function windConditions() {
+    const allOff = Array.from(gridItems).every(item =>
+        toggleGridItem(item).backGroundIamege.includes('rgb(purple, white, purple)',
+        );
+
+    if (allOff) {
+        alert("You win");
+    }
+}
